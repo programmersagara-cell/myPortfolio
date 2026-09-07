@@ -1,0 +1,5 @@
+# Deny direct execution of uploaded files — serve only as static images
+php_flag engine off
+<FilesMatch "\.(?i:php|phtml|phar)$">
+    Require all denied
+</FilesMatch>

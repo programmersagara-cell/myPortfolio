@@ -1,0 +1,351 @@
+{
+    "contact": {
+        "email": "justinmarcusantiago@gmail.com",
+        "linkedin": "",
+        "github": "",
+        "facebook": "",
+        "other": ""
+    },
+    "stats": {
+        "projects": "08",
+        "technologies": "15+"
+    },
+    "projects": [
+        {
+            "id": "codie",
+            "title": "Codie — Programming Laboratory",
+            "category": "web",
+            "problem": "Learning and practicing code across HTML, CSS, JavaScript, PHP, and SQL usually means juggling multiple tools, local servers, and database clients — with no shared workspace to run and compare experiments safely.",
+            "solution": "Built Codie, a browser-based programming laboratory with dedicated labs for HTML, CSS, JavaScript, PHP, and SQL: a CodeMirror-powered editor with bracket matching, code folding, auto-close tags, and code beautification; server-side PHP and SQL execution sandboxes; saveable experiments with session-based user accounts; and a modular front-end architecture (core state/UI/API modules + SQL lab engine).",
+            "tech": [
+                "PHP",
+                "JavaScript (modular ES modules)",
+                "CodeMirror 5",
+                "JS-Beautifier",
+                "MySQL / SQL execution engine",
+                "REST-style PHP API",
+                "CSS design system (60+ tokens)"
+            ],
+            "role": "Designer & full-stack developer — application architecture, editor integration, sandboxed execution APIs, and the full UI design system",
+            "features": [
+                "Six dedicated labs: HTML, CSS, JavaScript, PHP, SQL, and Full Stack",
+                "CodeMirror editor with syntax highlighting, bracket matching, code folding, auto-close tags, and placeholders",
+                "One-click code beautification (HTML/CSS/JS) and live run/execute for client and server-side code",
+                "Sandboxed PHP and SQL execution through a REST-style API",
+                "Save experiments per user with session-based login and registration",
+                "Automated test suite (50+ tests), visual inspection pages, and full documentation"
+            ],
+            "security": [
+                "Session-based authentication with login and registration",
+                "Server-side validation of all executed code",
+                "Execution sandboxing for PHP and SQL labs",
+                "Hardened .htaccess with security headers",
+                "XSS-safe rendering of user content"
+            ],
+            "improvements": "",
+            "github": "",
+            "demo": "",
+            "screenshots": [
+                "assets/img/uploads/20260907-codie-screenshot.png"
+            ]
+        },
+        {
+            "id": "itara",
+            "title": "Itara — IT Asset Management System",
+            "category": "web",
+            "problem": "Organizations need a single source of truth for every IT asset — PCs, laptops, switches, servers, printers — plus who they are assigned to, where they are, warranty status, and how the network connects. Spreadsheets cannot provide accountability or an audit trail.",
+            "solution": "Designed and built a complete production-ready ITAM platform from scratch: a custom PHP 8 MVC framework (zero framework dependencies), MySQL/MariaDB backend, interactive HTML5 Canvas network topology with drag-and-drop/zoom/connect modes, analytics dashboard with charts, CSV import/export, QR support, full audit trail, role-based access control, and a RESTful API.",
+            "tech": [
+                "PHP 8+",
+                "MySQL / MariaDB",
+                "Vanilla JavaScript",
+                "HTML5 Canvas",
+                "Chart.js",
+                "PDO",
+                "REST API",
+                "MVC"
+            ],
+            "role": "Architect & full-stack developer — designed the MVC core, database schema, security layer, topology engine, and all modules",
+            "features": [
+                "Asset ledger with auto-generated tags (PC-001, SRV-001…) and rich hardware fields",
+                "Interactive network topology: drag-and-drop, zoom/pan, connect/disconnect links, labels, PNG export, position persistence",
+                "Analytics dashboard — type/status/department charts and monthly trend trends",
+                "Role-based access control (Admin / Operator / Viewer)",
+                "Full audit logging of every CRUD operation",
+                "CSV import/export, backup system, mail queue worker, warranty expiry tracking",
+                "Unit & integration test suite, database migrations"
+            ],
+            "security": [
+                "CSRF protection on all forms (dedicated middleware)",
+                "XSS prevention via output escaping",
+                "SQL injection prevention with PDO prepared statements",
+                "Password hashing (bcrypt, cost factor 12)",
+                "Rate limiting on login attempts",
+                "Session security — HttpOnly + SameSite cookies, periodic regeneration",
+                "Security headers + secure file upload validation"
+            ],
+            "improvements": "[Add measurable results]",
+            "github": "",
+            "demo": "",
+            "screenshots": [
+                "assets/img/uploads/20260902-7414d8c27ab42e01.png",
+                "assets/img/uploads/20260902-b0b278c958bfb49f.png",
+                "assets/img/uploads/20260902-320bad435da63a5d.png",
+                "assets/img/uploads/20260902-674de13aa3874ac5.png",
+                "assets/img/uploads/20260902-b72ea5a8bd1100bc.png"
+            ]
+        },
+        {
+            "id": "media-uploader",
+            "title": "Media Uploader",
+            "category": "web",
+            "problem": "Departments needed a secure way to upload and organize media files without dumping everything into shared folders with no access control.",
+            "solution": "Built a web application with department-based storage, validated uploads, role-based access, and an audit-friendly event log.",
+            "tech": [
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "XAMPP"
+            ],
+            "role": "Full-stack developer & security implementer",
+            "features": [
+                "Department-based storage structure",
+                "Validated & sanitized file uploads",
+                "Access control per department",
+                "Upload activity logging"
+            ],
+            "security": [
+                "Extension + MIME type validation",
+                "Size limits",
+                "Safe filename generation",
+                "Files stored outside executable paths"
+            ],
+            "improvements": "",
+            "github": "",
+            "demo": "",
+            "screenshots": [
+                "assets/img/uploads/20260902-7740e4ac45329f12.png",
+                "assets/img/uploads/20260902-1ad01f70e2152415.png",
+                "assets/img/uploads/20260902-4b431e4b8e7e7334.png",
+                "assets/img/uploads/20260902-a6832a14f2104a3b.png",
+                "assets/img/uploads/20260902-e05ce8b818550d25.png"
+            ]
+        },
+        {
+            "id": "production-mgmt",
+            "title": "Production Management System",
+            "category": "web",
+            "problem": "Production tracking relied on manual records that were slow to update and harder to report from.",
+            "solution": "Developed a centralized tracking and reporting platform covering production entries, status, and summary reports.",
+            "tech": [
+                "PHP",
+                "MySQL",
+                "JavaScript"
+            ],
+            "role": "Systems developer",
+            "features": [
+                "Production entry tracking",
+                "Status monitoring",
+                "Summary reporting",
+                "User accounts"
+            ],
+            "security": [
+                "Prepared statements (SQL injection prevention)",
+                "Output encoding (XSS prevention)",
+                "Authenticated sessions"
+            ],
+            "improvements": "Reduced manual encoding and improved reporting consistency. [Add measurable results]",
+            "github": "",
+            "demo": "",
+            "screenshots": [
+                "assets/img/uploads/20260903-eb584de2b9a21a2c.png"
+            ]
+        },
+        {
+            "id": "barcode-warehouse",
+            "title": "Barcode Warehouse System",
+            "category": "web",
+            "problem": "Tracking items across Production → Warehouse → Delivery was error-prone when done by hand.",
+            "solution": "Implemented barcode-driven scanning at each stage, giving real-time item location and movement history.",
+            "tech": [
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "Barcode scanning"
+            ],
+            "role": "Developer & workflow designer",
+            "features": [
+                "Scan-based stage transitions",
+                "Item movement history",
+                "Warehouse inventory view",
+                "Delivery confirmation"
+            ],
+            "security": [
+                "Server-side state validation",
+                "Role-based access",
+                "Audit trail of movements"
+            ],
+            "improvements": "[Add measurable results]",
+            "github": "",
+            "demo": "",
+            "screenshots": [
+                "assets/img/uploads/20260903-9c23812717d8a9c8.png",
+                "assets/img/uploads/20260903-e7bd280307bb1e45.png",
+                "assets/img/uploads/20260903-7a1cb39f1adae986.png"
+            ]
+        },
+        {
+            "id": "excel-to-web",
+            "title": "Excel-to-Web System",
+            "category": "web",
+            "problem": "Shared Excel workbooks caused version conflicts, broken formulas, and no access control.",
+            "solution": "Replaced the shared-file workflow with a proper multi-user web application backed by a relational database.",
+            "tech": [
+                "PHP",
+                "MySQL",
+                "JavaScript"
+            ],
+            "role": "Full-stack developer",
+            "features": [
+                "Multi-user simultaneous editing",
+                "Validation at input time",
+                "Report generation",
+                "Data consistency checks"
+            ],
+            "security": [
+                "Authentication & session management",
+                "CSRF protection",
+                "Input validation & output encoding"
+            ],
+            "improvements": "Better data consistency and access control. Reduced duplicate records. [Add measurable results]",
+            "github": "",
+            "demo": "",
+            "screenshots": [
+                "assets/img/uploads/20260903-4b6ead52e058d533.png"
+            ]
+        },
+        {
+            "id": "it-infra",
+            "title": "IT Infrastructure Projects",
+            "category": "infra",
+            "problem": "Day-to-day infrastructure needs: workstation deployments, network setup, server maintenance, endpoint protection rollout.",
+            "solution": "Handled hands-on deployment and support — OS installation, LAN configuration, Trend Micro-supported endpoint/server security, backup routines.",
+            "tech": [
+                "Windows Server",
+                "Trend Micro",
+                "Networking",
+                "Backup tools"
+            ],
+            "role": "IT support / infrastructure",
+            "features": [
+                "Workstation & OS deployment",
+                "LAN / IP configuration",
+                "Endpoint protection rollout",
+                "Backup scheduling"
+            ],
+            "security": [
+                "Security policy enforcement via Trend Micro technologies",
+                "Patch management routines",
+                "Access management"
+            ],
+            "improvements": "",
+            "github": "",
+            "demo": "",
+            "screenshots": []
+        },
+        {
+            "id": "portfolio-site",
+            "title": "This Portfolio",
+            "category": "web",
+            "problem": "Presenting development + security capabilities in one credible, professional place.",
+            "solution": "Designed and built this site as a demonstration of both front-end craft and security-first thinking.",
+            "tech": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "PHP"
+            ],
+            "role": "Designer & developer",
+            "features": [
+                "Interactive SOC simulator & terminal",
+                "Dark/light theme",
+                "Accessible, responsive design",
+                "Secured contact form"
+            ],
+            "security": [
+                "CSP & security headers (.htaccess)",
+                "CSRF token + honeypot + rate limiting on form",
+                "Client & server input validation",
+                "No secrets in frontend code"
+            ],
+            "improvements": "",
+            "github": "",
+            "demo": "",
+            "screenshots": []
+        }
+    ],
+    "certifications": [
+        {
+            "category": "Cybersecurity",
+            "name": "Cyber Security System: Secure Digital Business, Compliance and AI Governance",
+            "issuer": "TUV SUD",
+            "year": "2026",
+            "image": "assets/img/uploads/20260902-75b5f66edd9b656d.png"
+        },
+        {
+            "category": "Networking",
+            "name": "Cisco basic Certification",
+            "issuer": "STI",
+            "year": "2024",
+            "image": ""
+        },
+        {
+            "category": "Networking",
+            "name": "Huawei Cloud",
+            "issuer": "STI",
+            "year": "2025",
+            "image": ""
+        },
+        {
+            "category": "SAP",
+            "name": "Basic, Intermediate",
+            "issuer": "STI",
+            "year": "2024",
+            "image": ""
+        },
+        {
+            "category": "JAVA",
+            "name": "Introduction to JAVA",
+            "issuer": "STI",
+            "year": "2023",
+            "image": ""
+        }
+    ],
+    "timeline": [
+        {
+            "period": "January 2026 - Current date",
+            "title": "IT Support",
+            "desc": "[Add professional experience details]"
+        },
+        {
+            "period": "January 2026 - Current date",
+            "title": "System Development",
+            "desc": "[Add professional experience details]"
+        },
+        {
+            "period": "January 2026 - Current date",
+            "title": "Cybersecurity Staff",
+            "desc": "[Add professional experience details]"
+        },
+        {
+            "period": "January 2026 - Current date",
+            "title": "Infrastructure",
+            "desc": "[Add professional experience details]"
+        },
+        {
+            "period": "January 2026 - Current date",
+            "title": "IT Programmer • Cybersecurity • Systems",
+            "desc": "Combining software development, security operations, and IT infrastructure support."
+        }
+    ]
+}
