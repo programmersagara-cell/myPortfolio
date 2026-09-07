@@ -1,0 +1,14 @@
+# Never publish the PHP backend or private data to a public repo
+/api/
+/admin/
+/storage/
+/private_messages.log
+.htaccess
+*.log
+
+# Local admin-edited uploads (contains your real images; copy what you want into docs/assets/img)
+/assets/img/uploads/
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
